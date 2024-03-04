@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Todos</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            height: auto;
+            border: 1px solid black;
+            width: 50%;
+            margin: auto;
+            margin-top: 10px;
+        }
+        th,td{
+            border: 1px solid black;
+        }
+        
+        tbody{
+            text-align: center;
+        }
+        thead{
+            display: none;
+        }
+        button{
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            cursor: pointer;
+            height: 25px;
+            width: 6%;
+        }
+        .button:hover{
+            background-color: black;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <button>getTodos</button>
+    <h1 style="text-align: center; display: none;">Todos table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tBody id="tBody">
+
+        </tBody>
+    </table>
+</body>
+<script src="index.js"></script>
+</html>
